@@ -3,8 +3,7 @@ This is a personal portfolio website built using HTML and CSS, with plans to exp
 
 ## ✍️ Author: Elizabeth Acevedo
 
-*This Web Page is still a work in progress as I<img width="1417" height="838" alt="MyWebsiteEA" src="https://github.com/user-attachments/assets/1d368381-b985-4453-87ad-945f8cd6306c" />
- continue learning and improving my skills.*
+*This Web Page is still a work in progress as I continue learning and improving my skills.*
 
 ## 🌟 Highlights
 
