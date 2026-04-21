@@ -1,111 +1,208 @@
-/* Fonts: fonts.google.com */
+/* =========================
+   IMPORTING FONTS
+   ========================= */
+/* This imports a font from: fonts.google.com. We can use it in our site instead of relying on default fonts, we can customize the look. */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 
+/* =========================
+   CSS VARIABLES (ROOT)
+   ========================= */
+/* :root is the highest-level selector (like global vairables in programming). 
+    We define reusable values here so we don't repeat colors everywhere. */
 /* Define CSS Variables using Root Selector */
 :root {
-    --base-color: #ffffff; /* Hex value for white */
-    --text-color: #000000; /* Hex value for black */
+    --base-color: #ffffff; /* Hex value for white (Used for background color) */
+    --text-color: #000000; /* Hex value for black (Used for Main text color)*/
+
+    /* Theme colors */
     --primary-color: #ffc06e;
     --secondary-color: #97A97C;
+
+    /* Extra palette (for backgrounds, accents, etc.) */
     --color-1: #E6D7D0;
     --color-2: #BA9785;
     --color-3: #D8C7B9;
     --color-4: #728359;
 }
 
+/* =========================
+   CSS RESET
+   ========================= */
+/* The * selector applies to ALL elements. Browsers add default margins/padding, which can mess up layouts.
+This removes that inconsistency and helps prevent unexpected behavior on different browsers. */
 /* Remove Default Settings (Addresses all HTML elements) */
 * {
-    margin: 0;  /* Helps prevent unexpected behavior on different browsers */
+    margin: 0;
     padding: 0;
+
+    /* Makes width/height include padding + border (much easier to manage layouts) */
     box-sizing: border-box;
 }
 
+/* =========================
+   GLOBAL STYLES
+   ========================= */
 html {
+    /* Sets default font for entire page */
     font-family: 'Times New Roman', Times;
+
+    /* Uses one of my above variables instead of hardcoding black */
     color: var(--text-color);
 }
 
 body {
+    /* Adds spacing around entire page */
     padding: 1em;
+
     background-color: var(--base-color);
 }
 
+/* =========================
+   HEADINGS
+   ========================= */
+/* Styling all main headings together */
 h1, h2, h3 {
     color: white;
+    /* Overrides default font for headings only */
     font-family: Merriweather;
 }
 
+/* =========================
+   NAVIGATION BAR
+   ========================= */
 nav {
+    /* top | horizontal | bottom */
     margin: 1em auto 3em auto;
+
+    /* Responsive trick:
+       - Max width = 1000px
+       - But shrink to fit smaller screens */
     width: min(1000px, 100%);
 }
 
 nav ul {
+    /* Turns list into a horizontal row instead of vertical */
     display: flex;
+
+    /* Vertically aligns items */
     align-items: center;
+
+    /* Removes bullet points */
     list-style-type: none;
+
+    /* Space between items */
     gap: 2em;
 }
 
+/* Targets ONLY the first list item */
 nav li:first-child {
+    /* Pushes everything else to the right */
     margin-right: auto;
+
     font-family: Merriweather, 'Times New Roman', Times;
     font-weight: bold;
-
 }
 
+/* Styling links */
 nav a {
-    text-decoration: none; /* Removes permanent underline on word */
+    /* Removes permanent underline on word */
+    text-decoration: none;
     color: black;
 
 }
 
+/* Hover effect (when mouse is over link) */
 nav a:hover {
     text-decoration: underline; /* Adds underline on word only when hovering over it */
 
 }
 
+/* =========================
+   SECTION + HEADER LAYOUT
+   ========================= */
+/* Applies same style to header and any section */
 header, section {
+    /* Keeps content centered and responsive */
     margin: 2em auto;
     width: min(75em, 100%);
+
     background-color: var(--color-3);
+
+    /* Responsive padding */
     padding: min(2em, 15%);
+
+    /* Rounded corners */
     border-radius: 1em;
 }
 
+/* =========================
+   FLEXBOX LAYOUT
+   ========================= */
+/* Container for image + text */
 .flex-container {
     display: flex;
+
+    /* Centers items horizontally */
     justify-content: center;
+
+    /* Centers items vertically */
     align-items: center;
+
+    /* Allows items to stack on smaller screens */
     flex-wrap: wrap;
+
     gap: 3em;
 
 }
 
+/* =========================
+   IMAGE STYLING
+   ========================= */
 header img {
+    /* Prevents image from overflowing container */
     max-width: 100%;
+
     border-radius: 1em;
+
+    /* Ensures image fills space nicely without distortion */
     object-fit: cover;
+
+    /* Focuses on bottom part of image if cropped */
     object-position: bottom;
 
 }
 
+/* =========================
+   TEXT CONTAINER
+   ========================= */
 .text-container {
-    /* flex: no grow, flex shrink, shrink if needed */
+    /* flex-grow: don't expand,
+       flex-shrink: shrink if needed,
+       flex-basis: preferred width */
     flex: 0 1 34em;
 }
 
+/* =========================
+   TYPOGRAPHY
+   ========================= */
 h1 {
+    /* rem = relative to root font size */
     font-size: 2.5rem;
 }
 
 .text-container p {
+    /* top | right | bottom | left */
     margin: .75em 0 1em 0;
     font-size: 1.25rem;
 }
 
+/* =========================
+   BUTTON STYLES
+   ========================= */
 .cta-button {
+    /* Allows padding/margin like a button */
     display: inline-block;
+
     text-decoration: none;
     color: white;
     background-color: var(--primary-color);
@@ -114,6 +211,7 @@ h1 {
     font-weight: 600;
 }
 
+/* Secondary button variation */
 .secondary {
     background-color: var(--secondary-color);
 }
