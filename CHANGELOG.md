@@ -1,3 +1,5 @@
+## Version 0.2.2 - Added text into paragraph section
+
 ## Version 0.2.1 - Added clean comments and updated README
 
 ## Version 0.2.0 - First Version of Website
