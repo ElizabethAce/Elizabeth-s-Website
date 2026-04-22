@@ -33,8 +33,9 @@ This project was created to:
 https://elizabethace.github.io/Elizabeth-s-Website/
 
 ## 🚀 Example Output
-The following image demonstrates a working website as of April 20, 2026:
+The following image demonstrates a working web page:
 
-<img width="1417" height="838" alt="MyWebsiteEA" src="https://github.com/user-attachments/assets/345f6487-3ab6-4ec3-a091-d34ff0842362" />
+<img width="1470" height="956" alt="Eli&#39;s Portfolio Web Page" src="https://github.com/user-attachments/assets/96060b38-5362-4445-a143-cdfa0f6dc225" />
+
 
 
