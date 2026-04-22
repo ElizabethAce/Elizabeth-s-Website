@@ -38,7 +38,5 @@ https://elizabethace.github.io/Elizabeth-s-Website/
 ## 🚀 Example Output
 The following image demonstrates a working web page:
 
-<img width="1470" height="956" alt="Eli&#39;s Portfolio Web Page" src="https://github.com/user-attachments/assets/96060b38-5362-4445-a143-cdfa0f6dc225" />
-
-
+<img width="1470" height="956" alt="Eli&#39;s Portfolio Web Page" src="https://github.com/user-attachments/assets/d1efa689-9f35-4816-8e5a-7f3c6d796c30" />
 
