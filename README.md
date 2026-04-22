@@ -1,5 +1,5 @@
 # 🌐 Elizabeth's Personal Portfolio Website
-This is a personal portfolio web page built using HTML and CSS, with plans to expand functionality using JavaScript.
+This is a personal portfolio web page built using HTML, CSS, and JavaScript.
 
 ## ✍️ Author: Elizabeth Acevedo
 
@@ -17,6 +17,9 @@ This is a personal portfolio web page built using HTML and CSS, with plans to ex
   - Responsive design techniques (min(), relative units)
   - Reusable styling with CSS variables
   - Debugging and testing 
+  
+- Implements basic JavaScript functionality:
+  - Event handling using button click interactions
 
 ## ℹ️ Overview
 

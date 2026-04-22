@@ -1,3 +1,10 @@
+## Version 0.3.0 - Added JavaScript into Web Page design
+- Secondary button uses JS, reveals message
+- script.js created and linked on HTML file
+- Link to first button opens on new tab
+- Commented all files
+- Updated README
+
 ## Version 0.2.3 - Modified comments, text, and button links
 
 ## Version 0.2.2 - Added text into paragraph section

@@ -8,6 +8,8 @@
     <head>
         <!-- Link to external CSS file -->
         <link rel="stylesheet" href="style.css">
+        <!-- Link to external JavaScript file -->
+        <script src="script.js"></script>
     <!-- Title shown in browser tab -->
     <title> Eli's Portfolio Web Page </title>
     </head>
@@ -30,7 +32,7 @@
                 <!-- Image -->
                 <!-- src = where the image is located -->
                 <!-- height/width control size -->
-                <img height="400px" width="300px" src="images/mbp.jpg"> <!--/Users/elizabethacevedo/Desktop/MyWebsite/Elizabeth-s-Website/-->
+                <img height="400px" width="300px" src="images/mbp.jpg"> 
                 
                 <!-- Text section next to image -->
                 <div class="text-container">
@@ -45,9 +47,10 @@
                     </p>
 
                     <!-- Call-to-action buttons -->
-                    <a href="https://www.linkedin.com/in/eaceved/" class="cta-button">Check Out my LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/eaceved/" class="cta-button" target="blank" rel="noopener noreferrer">Check Out my LinkedIn</a>
 
-                    <a href="#my-work" class="cta-button secondary">See My Work</a>
+                    <button onclick="revealMsg()" class="cta-button secondary">Click Me!</button>
+                    <p id="hiddenMsg" style="display: none;">Thanks for visiting my page :D</p>
                 </div>
             </div>
         </header>

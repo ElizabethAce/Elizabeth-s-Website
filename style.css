@@ -224,4 +224,13 @@ h1 {
 /* Secondary button variation */
 .secondary {
     background-color: var(--secondary-color);
+
+    border: none;          /* removes default button border */
+    cursor: pointer;       /* makes it feel clickable */
+    font-size: 1rem;       /* ensures consistent text size */
+}
+
+/* Adds hovering effect to buttons */
+.cta-button:hover {
+    opacity: 0.85;
 }
