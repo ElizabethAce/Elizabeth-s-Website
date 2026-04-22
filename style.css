@@ -1,3 +1,7 @@
+/* =================================================================
+   CSS (Cascading Stylesheets) = How your website should look like
+   ================================================================= */
+
 /* =========================
    IMPORTING FONTS
    ========================= */
@@ -42,14 +46,19 @@ This removes that inconsistency and helps prevent unexpected behavior on differe
 /* =========================
    GLOBAL STYLES
    ========================= */
+/* html (The Root Element): This defines the base for the rem (root em) unit.
+ If the browser's default is 16px, then 1rem equals 16px */
 html {
     /* Sets default font for entire page */
-    font-family: 'Times New Roman', Times;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
 
     /* Uses one of my above variables instead of hardcoding black */
     color: var(--text-color);
 }
 
+/* body (The Parent Element): This serves as the default parent for the em unit
+ of most page content. If no font size is specified for the body, it inherits 
+ the 16px size from the html element.  */
 body {
     /* Adds spacing around entire page */
     padding: 1em;
@@ -71,7 +80,8 @@ h1, h2, h3 {
    NAVIGATION BAR
    ========================= */
 nav {
-    /* top | horizontal | bottom */
+    /* top | right | bottom | left 
+    auto: centers element*/
     margin: 1em auto 3em auto;
 
     /* Responsive trick:
@@ -99,7 +109,7 @@ nav li:first-child {
     /* Pushes everything else to the right */
     margin-right: auto;
 
-    font-family: Merriweather, 'Times New Roman', Times;
+    font-family: Merriweather, 'Times New Roman', Times, serif, sans-serif;
     font-weight: bold;
 }
 
@@ -120,8 +130,8 @@ nav a:hover {
 /* =========================
    SECTION + HEADER LAYOUT
    ========================= */
-/* Applies same style to header and any section */
-header, section {
+/* Applies same style to header. The beige colored box you see on output */
+header {
     /* Keeps content centered and responsive */
     margin: 2em auto;
     width: min(75em, 100%);
@@ -140,6 +150,7 @@ header, section {
    ========================= */
 /* Container for image + text */
 .flex-container {
+    /* Let's you arrange elements side-by-side */
     display: flex;
 
     /* Centers items horizontally */
@@ -148,9 +159,10 @@ header, section {
     /* Centers items vertically */
     align-items: center;
 
-    /* Allows items to stack on smaller screens */
+    /* Allows items to stack on smaller screens (good for mobile devices) */
     flex-wrap: wrap;
 
+    /* Gap between image and text container */
     gap: 3em;
 
 }
@@ -159,15 +171,16 @@ header, section {
    IMAGE STYLING
    ========================= */
 header img {
-    /* Prevents image from overflowing container */
+    /* Prevents image from overflowing container (Keeps it responsive) */
     max-width: 100%;
 
+    /* Curves edges of img */
     border-radius: 1em;
 
     /* Ensures image fills space nicely without distortion */
     object-fit: cover;
 
-    /* Focuses on bottom part of image if cropped */
+    /* Aligns the image to the bottom edge of image. If cropping happens, it'll happen to the top of the image. */
     object-position: bottom;
 
 }
@@ -176,15 +189,12 @@ header img {
    TEXT CONTAINER
    ========================= */
 .text-container {
-    /* flex-grow: don't expand,
+    /* flex-grow: don't grow,
        flex-shrink: shrink if needed,
        flex-basis: preferred width */
     flex: 0 1 34em;
 }
 
-/* =========================
-   TYPOGRAPHY
-   ========================= */
 h1 {
     /* rem = relative to root font size */
     font-size: 2.5rem;

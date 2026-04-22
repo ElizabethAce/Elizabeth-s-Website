@@ -1,5 +1,5 @@
 # 🌐 Elizabeth's Personal Portfolio Website
-This is a personal portfolio website built using HTML and CSS, with plans to expand functionality using JavaScript.
+This is a personal portfolio web page built using HTML and CSS, with plans to expand functionality using JavaScript.
 
 ## ✍️ Author: Elizabeth Acevedo
 
@@ -8,13 +8,14 @@ This is a personal portfolio website built using HTML and CSS, with plans to exp
 ## 🌟 Highlights
 
 - Includes navigation to:
-  - GitHub projects (e.g., Number Guessing Game)  
+  - GitHub projects (e.g., Number Guessing Game, Personal Portfolio Web Page)  
   - LinkedIn profile 
-- Demonstrates foundational programming concepts through linked projects:
-  - Variables  
-  - Conditionals  
-  - Loops  
-  - Functions  
+- Demonstrates foundational web development concepts:
+  - HTML structure (semantic elements, layout organization)
+  - CSS styling (colors, fonts, spacing)
+  - Layout design using Flexbox
+  - Responsive design techniques (min(), relative units)
+  - Reusable styling with CSS variables
   - Debugging and testing 
 
 ## ℹ️ Overview
@@ -22,7 +23,7 @@ This is a personal portfolio website built using HTML and CSS, with plans to exp
 This project was created to:  
 - Learn and strengthen my understanding of **HTML, CSS, and JavaScript**  
 - Practice explaining web development concepts clearly so I can **teach beginners**  
-- Build a platform to **showcase my projects** and technical growth
+- Build a platform to **showcase my projects**
 
 ## 🛠️ Technologies Used
 - Live Server Extension (for local deployment)
